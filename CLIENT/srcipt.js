@@ -21,7 +21,7 @@ function displayData(data) {
     data.forEach(info => {
         const infoElement = document.createElement('div');
         infoElement.className = 'informationItem';
-        infoElement.innerHTML = `<img src="${info.image}" alt="Image"><div><p><b>매점 이름:</b></p> <p>${info.name}</p><p><b>주소:</b><p> ${info.address}</p></div>`;
+        infoElement.innerHTML = `<img src="./banapress/${info.name}.jpg" alt="Image"><div><p><b>매점 이름:</b></p> <p>${info.name}</p><p><b>주소:</b><p> ${info.address}</p></div>`;
         container.appendChild(infoElement);
         if (info.address) {
             getAddress(info.address, info.name, map);
